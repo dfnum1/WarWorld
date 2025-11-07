@@ -1,0 +1,366 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e54765528df5de40bc1ffb15bde05f7, type: 3}
+  m_Name: CutsceneCustomAgent
+  m_EditorClassIdentifier: 
+  vEvents:
+  - name: "\u5C45\u6C11\u5BF9\u8C61\u83B7\u53D6"
+    tip: 
+    customType: 1000
+    version: 0
+    inputVariables:
+    - name: "\u5C45\u6C11ID"
+      type: 1
+      defaultValue: 0
+      displayType: 
+      canEdit: 1
+    outputVariables:
+    - name: "\u5C45\u6C11idx"
+      type: 8
+      defaultValue: 0
+      displayType: 
+      canEdit: 0
+  - name: "\u5C45\u6C11\u5BF9\u8C61\u5F52\u8FD8"
+    tip: 
+    customType: 1001
+    version: 0
+    inputVariables:
+    - name: "\u5C45\u6C11ID"
+      type: 1
+      defaultValue: 0
+      displayType: 
+      canEdit: 1
+    outputVariables: []
+  - name: "\u82F1\u96C4\u5BF9\u8C61\u83B7\u53D6"
+    tip: 
+    customType: 1002
+    version: 0
+    inputVariables:
+    - name: "\u82F1\u96C4ID"
+      type: 1
+      defaultValue: 0
+      displayType: 
+      canEdit: 1
+    outputVariables:
+    - name: "\u82F1\u96C4idx"
+      type: 8
+      defaultValue: 0
+      displayType: 
+      canEdit: 0
+  - name: "\u82F1\u96C4\u5BF9\u8C61\u5F52\u8FD8"
+    tip: 
+    customType: 1003
+    version: 0
+    inputVariables:
+    - name: "\u82F1\u96C4ID"
+      type: 1
+      defaultValue: 0
+      displayType: 
+      canEdit: 1
+    outputVariables: []
+  - name: "\u663E\u793A\u754C\u9762"
+    tip: 
+    customType: 1004
+    version: 0
+    inputVariables:
+    - name: "\u754C\u9762Code"
+      type: 3
+      defaultValue: 
+      displayType: 
+      canEdit: 1
+    outputVariables: []
+  - name: "\u9690\u85CF\u754C\u9762"
+    tip: 
+    customType: 1005
+    version: 0
+    inputVariables:
+    - name: "\u754C\u9762Code"
+      type: 3
+      defaultValue: 
+      displayType: 
+      canEdit: 1
+    outputVariables: []
+  - name: "UI\u70B9\u51FB\u542F\u7528"
+    tip: 
+    customType: 1006
+    version: 0
+    inputVariables: []
+    outputVariables: []
+  - name: "UI\u70B9\u51FB\u7981\u7528"
+    tip: 
+    customType: 1007
+    version: 0
+    inputVariables: []
+    outputVariables: []
+  - name: "\u5438\u4E91\u5F69\u73A9\u6CD5\u6FC0\u6D3B"
+    tip: 
+    customType: 1008
+    version: 0
+    inputVariables:
+    - name: "\u89E3\u9501\u5C9BID"
+      type: 1
+      defaultValue: 2
+      displayType: 
+      canEdit: 1
+    outputVariables: []
+  - name: "\u8FD4\u56DE\u4E3B\u754C\u9762"
+    tip: 
+    customType: 1009
+    version: 0
+    inputVariables: []
+    outputVariables: []
+  - name: "\u62E6\u622A\u542F\u7528"
+    tip: 
+    customType: 1010
+    version: 0
+    inputVariables:
+    - name: "\u62E6\u622A\u7C7B\u578B"
+      type: 1
+      defaultValue: 0
+      displayType: 
+      canEdit: 1
+    outputVariables: []
+  - name: "\u62E6\u622A\u7981\u7528"
+    tip: 
+    customType: 1011
+    version: 0
+    inputVariables:
+    - name: "\u62E6\u622A\u7C7B\u578B"
+      type: 1
+      defaultValue: 0
+      displayType: 
+      canEdit: 1
+    outputVariables: []
+  - name: "\u663E\u9690\u5438\u4E91\u98DE\u8247"
+    tip: 
+    customType: 1013
+    version: 0
+    inputVariables:
+    - name: "\u662F\u5426\u663E\u793A\u98DE\u8247"
+      type: 1
+      defaultValue: 0
+      displayType: 
+      canEdit: 1
+    - name: "\u662F\u5426\u663E\u793AHUD"
+      type: 1
+      defaultValue: 0
+      displayType: 
+      canEdit: 1
+    outputVariables: []
+  - name: "\u89C6\u9891\u64AD\u653E"
+    tip: 
+    customType: 1014
+    version: 0
+    inputVariables:
+    - name: "\u89C6\u9891\u5730\u5740"
+      type: 3
+      defaultValue: "\u201C\u201D"
+      displayType: 
+      canEdit: 1
+    outputVariables: []
+  - name: "\u83B7\u53D6\u5185\u57CE\u5EFA\u7B51"
+    tip: 
+    customType: 1015
+    version: 0
+    inputVariables:
+    - name: "\u5EFA\u7B51ID"
+      type: 1
+      defaultValue: 101001
+      displayType: 
+      canEdit: 1
+    outputVariables:
+    - name: "\u5EFA\u7B51idx"
+      type: 8
+      defaultValue: 0
+      displayType: 
+      canEdit: 0
+  - name: "\u8BBE\u7F6E\u5438\u4E91\u5EFA\u7B51\u5F53\u524D\u52A8\u4F5C"
+    tip: 
+    customType: 1016
+    version: 0
+    inputVariables:
+    - name: "\u5EFA\u7B51ID"
+      type: 1
+      defaultValue: 0
+      displayType: 
+      canEdit: 1
+    - name: "\u52A8\u4F5C\u540D\u79F0"
+      type: 3
+      defaultValue: 0
+      displayType: 
+      canEdit: 1
+    outputVariables: []
+  - name: "\u8BBE\u7F6E\u5438\u4E91\u5EFA\u7B51\u4E0A\u4E91\u7684\u906E\u7F69"
+    tip: 
+    customType: 1017
+    version: 0
+    inputVariables:
+    - name: "\u5EFA\u7B51ID"
+      type: 1
+      defaultValue: 0
+      displayType: 
+      canEdit: 1
+    - name: "\u906E\u7F69\u534A\u5F84"
+      type: 1
+      defaultValue: 0
+      displayType: 
+      canEdit: 1
+    outputVariables: []
+  - name: "\u663E\u9690\u5438\u4E91HUD"
+    tip: 
+    customType: 1018
+    version: 0
+    inputVariables:
+    - name: "\u663E\u793A"
+      type: 4
+      defaultValue: 1
+      displayType: 
+      canEdit: 1
+    outputVariables: []
+  - name: "\u663E\u9690HUD"
+    tip: 
+    customType: 1019
+    version: 0
+    inputVariables:
+    - name: "\u663E\u793A"
+      type: 4
+      defaultValue: 1
+      displayType: 
+      canEdit: 1
+    outputVariables: []
+  - name: "\u663E\u9690\u5185\u57CE\u5173\u5361\u4E8B\u4EF6"
+    tip: 
+    customType: 1020
+    version: 0
+    inputVariables:
+    - name: "\u663E\u793A"
+      type: 4
+      defaultValue: 1
+      displayType: 
+      canEdit: 1
+    outputVariables: []
+  - name: "\u5267\u60C5\u6253\u70B9"
+    tip: 
+    customType: 1021
+    version: 0
+    inputVariables:
+    - name: "\u6807\u8BC6Key"
+      type: 3
+      defaultValue: 
+      displayType: 
+      canEdit: 1
+    outputVariables: []
+  vClips:
+  - name: "\u5C45\u6C11\u5192\u6CE1\u5BF9\u8BDD\u663E\u793A"
+    tip: 
+    customType: 2000
+    version: 0
+    inputVariables:
+    - name: "\u5C45\u6C11ID"
+      type: 1
+      defaultValue: 0
+      displayType: 
+      canEdit: 0
+    - name: "\u5BF9\u8BDDID"
+      type: 1
+      defaultValue: 0
+      displayType: 
+      canEdit: 0
+    - name: "X\u504F\u79FB"
+      type: 1
+      defaultValue: 0
+      displayType: 
+      canEdit: 0
+    - name: "Y\u504F\u79FB"
+      type: 1
+      defaultValue: 10
+      displayType: 
+      canEdit: 0
+    outputVariables: []
+  - name: "\u82F1\u96C4\u5192\u6CE1\u5BF9\u8BDD\u663E\u793A"
+    tip: 
+    customType: 2001
+    version: 0
+    inputVariables:
+    - name: "\u82F1\u96C4ID"
+      type: 1
+      defaultValue: 0
+      displayType: 
+      canEdit: 0
+    - name: "\u5BF9\u8BDDID"
+      type: 1
+      defaultValue: 0
+      displayType: 
+      canEdit: 0
+    - name: "X\u504F\u79FB"
+      type: 1
+      defaultValue: 0
+      displayType: 
+      canEdit: 0
+    - name: "Y\u504F\u79FB"
+      type: 1
+      defaultValue: 10
+      displayType: 
+      canEdit: 0
+    outputVariables: []
+  - name: "\u5C45\u6C11\u5FC3\u60C5"
+    tip: 
+    customType: 2002
+    version: 0
+    inputVariables:
+    - name: "\u5C45\u6C11ID"
+      type: 1
+      defaultValue: 0
+      displayType: 
+      canEdit: 0
+    - name: "\u8868\u60C5MoodID"
+      type: 1
+      defaultValue: 0
+      displayType: 
+      canEdit: 0
+    - name: "X\u504F\u79FB"
+      type: 1
+      defaultValue: 0
+      displayType: 
+      canEdit: 0
+    - name: "Y\u504F\u79FB"
+      type: 1
+      defaultValue: 10
+      displayType: 
+      canEdit: 0
+    outputVariables: []
+  - name: "\u82F1\u96C4\u5FC3\u60C5"
+    tip: 
+    customType: 2003
+    version: 0
+    inputVariables:
+    - name: "\u82F1\u96C4ID"
+      type: 1
+      defaultValue: 0
+      displayType: 
+      canEdit: 0
+    - name: "\u8868\u60C5MoodID"
+      type: 1
+      defaultValue: 0
+      displayType: 
+      canEdit: 0
+    - name: "X\u504F\u79FB"
+      type: 1
+      defaultValue: 0
+      displayType: 
+      canEdit: 0
+    - name: "Y\u504F\u79FB"
+      type: 1
+      defaultValue: 10
+      displayType: 
+      canEdit: 0
+    outputVariables: []

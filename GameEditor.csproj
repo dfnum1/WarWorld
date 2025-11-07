@@ -56,30 +56,30 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\GameEditor\GPU\EditorGPUPass.cs" />
-    <Compile Include="Assets\Scripts\GameEditor\CsvEditor\CsvBuilderTool.cs" />
-    <Compile Include="Assets\Scripts\GameEditor\PluginManager\PluginManager.cs" />
+    <Compile Include="Assets\Scripts\GameEditor\MapLevelEditor\MapEventLogic.cs" />
     <Compile Include="Assets\Scripts\GameEditor\Fbx\FbxAnimationFilter.cs" />
-    <Compile Include="Assets\Scripts\GameEditor\CsvEditor\CsvConfigEditor.cs" />
-    <Compile Include="Assets\Scripts\GameEditor\AutoMacros.cs" />
-    <Compile Include="Assets\Scripts\GameEditor\EditorInitalizeOnLoad.cs" />
-    <Compile Include="Assets\Scripts\GameEditor\MenuTools.cs" />
-    <Compile Include="Assets\Scripts\GameEditor\GPU\Texture2DArrayBuilder\Texture2DArrayBuilder.cs" />
-    <Compile Include="Assets\Scripts\GameEditor\Fbx\FbxMeshFilter.cs" />
+    <Compile Include="Assets\Scripts\GameEditor\CsvEditor\CsvBuilderTool.cs" />
+    <Compile Include="Assets\Scripts\GameEditor\GPU\EditorGPUPass.cs" />
     <Compile Include="Assets\Scripts\GameEditor\GPU\DiffuseAO\DiffuseAOEditor.cs" />
-    <Compile Include="Assets\Scripts\GameEditor\AttrEditor\AttrCalcEditorWindow.cs" />
-    <Compile Include="Assets\Scripts\GameEditor\GPU\LightMap\LightMapCalculater.cs" />
-    <Compile Include="Assets\Scripts\GameEditor\MapLevelEditor\MapChunckLogic.cs" />
-    <Compile Include="Assets\Scripts\GameEditor\GPU\Texture2DArrayBuilder\TextureConvertLogic.cs" />
-    <Compile Include="Assets\Scripts\GameEditor\MapLevelEditor\MapLevelEditor.cs" />
     <Compile Include="Assets\Scripts\GameEditor\MapLevelEditor\MapElementLogic.cs" />
-    <Compile Include="Assets\Scripts\GameEditor\PluginManager\PluginConfigWindow.cs" />
-    <Compile Include="Assets\Scripts\GameEditor\MapLevelEditor\MapPreviewLogic.cs" />
-    <Compile Include="Assets\Scripts\GameEditor\MapLevelEditor\MapConditionLogic.cs" />
+    <Compile Include="Assets\Scripts\GameEditor\PluginManager\PluginManager.cs" />
+    <Compile Include="Assets\Scripts\GameEditor\GPU\Texture2DArrayBuilder\TextureConvertLogic.cs" />
+    <Compile Include="Assets\Scripts\GameEditor\Fbx\MeshPivotCenter.cs" />
+    <Compile Include="Assets\Scripts\GameEditor\MapLevelEditor\MapChunckLogic.cs" />
+    <Compile Include="Assets\Scripts\GameEditor\AutoMacros.cs" />
+    <Compile Include="Assets\Scripts\GameEditor\AttrEditor\AttrCalcEditorWindow.cs" />
+    <Compile Include="Assets\Scripts\GameEditor\MenuTools.cs" />
     <Compile Include="Assets\Scripts\GameEditor\EditorGame\EditoModule.cs" />
     <Compile Include="Assets\Scripts\GameEditor\Fbx\FbxAnimationCliper.cs" />
-    <Compile Include="Assets\Scripts\GameEditor\Fbx\MeshPivotCenter.cs" />
-    <Compile Include="Assets\Scripts\GameEditor\MapLevelEditor\MapEventLogic.cs" />
+    <Compile Include="Assets\Scripts\GameEditor\CsvEditor\CsvConfigEditor.cs" />
+    <Compile Include="Assets\Scripts\GameEditor\MapLevelEditor\MapPreviewLogic.cs" />
+    <Compile Include="Assets\Scripts\GameEditor\GPU\LightMap\LightMapCalculater.cs" />
+    <Compile Include="Assets\Scripts\GameEditor\MapLevelEditor\MapLevelEditor.cs" />
+    <Compile Include="Assets\Scripts\GameEditor\MapLevelEditor\MapConditionLogic.cs" />
+    <Compile Include="Assets\Scripts\GameEditor\GPU\Texture2DArrayBuilder\Texture2DArrayBuilder.cs" />
+    <Compile Include="Assets\Scripts\GameEditor\PluginManager\PluginConfigWindow.cs" />
+    <Compile Include="Assets\Scripts\GameEditor\Fbx\FbxMeshFilter.cs" />
+    <Compile Include="Assets\Scripts\GameEditor\EditorInitalizeOnLoad.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Scripts\GameEditor\CsvEditor\CsvData_Tml_MapList.txt" />
@@ -375,35 +375,17 @@
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@2.0.0\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Plastic.Antlr3.Runtime">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@2.0.0\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.YamlDotNet">
-      <HintPath>Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.TextureAssets">
-      <HintPath>Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.IonicZip">
-      <HintPath>Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
-    </Reference>
-    <Reference Include="unityplastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@2.0.0\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
-    </Reference>
-    <Reference Include="log4netPlastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@2.0.0\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-      <HintPath>Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="ReportGeneratorMerged">
-      <HintPath>Library\PackageCache\com.unity.testtools.codecoverage@1.2.2\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
-    </Reference>
     <Reference Include="DemiLib">
       <HintPath>Assets\Scripts\Thirdpartys\Demigiant\DemiLib\Core\DemiLib.dll</HintPath>
     </Reference>
     <Reference Include="Google.Protobuf">
       <HintPath>Assets\Scripts\Thirdpartys\Proto\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Plastic.Antlr3.Runtime">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@2.0.0\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.YamlDotNet">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
     </Reference>
     <Reference Include="DOTweenProEditor">
       <HintPath>Assets\Scripts\Thirdpartys\Demigiant\DOTweenPro\Editor\DOTweenProEditor.dll</HintPath>
@@ -414,14 +396,17 @@
     <Reference Include="DemiEditor">
       <HintPath>Assets\Scripts\Thirdpartys\Demigiant\DemiLib\Core\Editor\DemiEditor.dll</HintPath>
     </Reference>
-    <Reference Include="DOTween">
-      <HintPath>Assets\Scripts\Thirdpartys\Demigiant\DOTween\DOTween.dll</HintPath>
-    </Reference>
-    <Reference Include="DOTweenPro">
-      <HintPath>Assets\Scripts\Thirdpartys\Demigiant\DOTweenPro\DOTweenPro.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Burst.Cecil.Mdb">
       <HintPath>Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.Mdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.TextureAssets">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.IonicZip">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
+    </Reference>
+    <Reference Include="unityplastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@2.0.0\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Cecil.Pdb">
       <HintPath>Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.Pdb.dll</HintPath>
@@ -429,11 +414,26 @@
     <Reference Include="Unity.Burst.Cecil">
       <HintPath>Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.dll</HintPath>
     </Reference>
+    <Reference Include="log4netPlastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@2.0.0\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Burst.Cecil.Rocks">
       <HintPath>Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll</HintPath>
     </Reference>
+    <Reference Include="DOTween">
+      <HintPath>Assets\Scripts\Thirdpartys\Demigiant\DOTween\DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="TagLibSharp">
       <HintPath>Assets\Scripts\GameEditor\Plugins\TagLibSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="ReportGeneratorMerged">
+      <HintPath>Library\PackageCache\com.unity.testtools.codecoverage@1.2.2\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTweenPro">
+      <HintPath>Assets\Scripts\Thirdpartys\Demigiant\DOTweenPro\DOTweenPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Android.Types">
       <HintPath>D:\Program Files\Unitys\Unity 2021.3.19f1c1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>

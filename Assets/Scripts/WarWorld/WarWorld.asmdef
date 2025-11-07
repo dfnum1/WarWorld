@@ -1,0 +1,16 @@
+{
+    "name": "WarWorld",
+    "rootNamespace": "",
+    "references": [
+        "GUID:22878922a34c76c42a18c9c15395c580"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
